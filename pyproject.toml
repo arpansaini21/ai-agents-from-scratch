@@ -1,0 +1,23 @@
+[project]
+name = "ai-agents-from-scratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "arpansaini21", email = "arpansaini201@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.4.7",
+    "langchain-openai>=1.7.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+ai-agents-from-scratch = "ai_agents_from_scratch:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
