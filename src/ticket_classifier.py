@@ -19,12 +19,3 @@ class ClassifyTicket:
             if keyword in self.description:
                 return team
         return "General Support"
-
-
-def main():
-    tc = ClassifyTicket("user is having network issue")
-    print(tc.assign_team())
-
-
-if __name__ == "__main__":
-    main()
