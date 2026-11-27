@@ -34,3 +34,30 @@ The classifier assigns the ticket to the Identity Team because it checks `login`
 | No confidence score                   | Calibrated classification and evaluation                   |
 | Risk of incorrect assignment          | Human-in-the-loop approval                                 |
 | No monitoring                         | Observability and tracing                                  |
+
+
+
+## Interview Question 1
+
+
+
+You are designing an AI ticket classification system that receives one million support tickets every day. Would you send every ticket to an LLM?
+
+
+
+Consider the following dimensions before answering:
+
+- Infrastructure and inference cost.
+- Latency and throughput.
+- Classification accuracy.
+- Deterministic versus probabilistic routing.
+- Failure handling and fallback mechanisms.
+- Security and sensitive customer information.
+
+
+
+At one million tickets per day, the average throughput is approximately 11.6 tickets per second, but peak throughput could be considerably higher.
+
+A strong Staff Engineer should evaluate whether a hybrid architecture using deterministic rules, lightweight ML models, and LLMs for complex cases would deliver better results than an LLM-only solution.
+
+Write your proposed architecture in five to ten sentences. I will evaluate your reasoning as an interviewer.
