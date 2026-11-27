@@ -1,0 +1,17 @@
+[project]
+name = "enterprise-agentic-ai"
+version = "0.1.0"
+description = "enterprise ticket assignment and incident investigation platform"
+readme = "README.md"
+authors = [
+    { name = "arpan saini", email = "arpansaini201@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+enterprise-agentic-ai = "enterprise-agentic-ai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
